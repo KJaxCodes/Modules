@@ -7,31 +7,31 @@
 
 const inventory = [];
 
-export const addItem = (item) => {
+export function addItem(item) {
     inventory.push(item);
-    console.log(`${item} added to the inventory.`);
+    console.log(`${item} added to the inventory`);
 };
 
-export const removeItem = (item) => {
-    const index = inventory.indexOf(item);
-    if (index !== -1) {
-        inventory.splice(index, 1);
-        console.log(`${item} removed from the inventory.`);
+export function removeItem(item) {
+    console.log("remove item");
+    const itemsPresent = inventory.indexOf(item);
+    if (itemsPresent > -1) {
+        inventory.splice(item, 1);
+        console.log(`${item} removed`);
     } else {
-        console.log(`${item} not found in the inventory.`);
+        console.log(`${item} not found`);
     }
 };
 
 export const listItems = () => {
-    console.log(`Listing all items:`);
-
     if (inventory.length === 0) {
-        console.log(`Inventory empty`)
-    }
-    else {
+        console.log("Inventory empty");
+    } else {
+        console.log("Current inventory includes:")
         for (const item of inventory) {
-            console.log(`* ${item}`);
+            console.log(`${item}`);
         }
     }
-};
+
+}
 

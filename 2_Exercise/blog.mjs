@@ -3,6 +3,6 @@
 
 import Post from './Post.mjs';
 
-const myPost = new Post("My first post.");
+const myPost = new Post("First post.", "This is my first post.");
 myPost.publish();
 

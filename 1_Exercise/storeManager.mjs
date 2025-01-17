@@ -4,10 +4,10 @@
 
 import { addItem, removeItem, listItems } from "./inventory.mjs";
 
-addItem("Broom");
-addItem("Cauldron");
-addItem("Pumpkin");
+addItem("apple");
+addItem("banana");
+addItem("coconut");
 listItems();
 
-removeItem("Pumpkin");
+removeItem("coconut");
 listItems();

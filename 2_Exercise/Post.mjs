@@ -7,7 +7,7 @@ export default class Post {
         this.content = content;
     }
     publish() {
-        console.log(`Publishing post: ${this.title}`);
+        console.log(`Publishing post: ${this.title}: ${this.content}`);
     }
 }
 
