@@ -3,3 +3,8 @@
 // functions and numberUtils.mjs for numeric operations that export various utility functions. Implement the index.mjs, which 
 // aggregates and re-exports all utility functions from the utils directory, facilitating a single point of import.
 // Create app.mjs that imports utilities from the aggregated utils/index.mjs and demonstrates their use.
+
+import { capitalize, half } from "./utils/index.mjs";
+
+console.log(capitalize("meow"));
+console.log(half(36));
